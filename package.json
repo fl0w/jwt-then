@@ -1,6 +1,6 @@
 {
   "name": "jwt-then",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Hack'n'slash promisify. This isn't an honest package, and you should treat it with suspicion.",
   "main": "index.js",
   "dependencies": {
