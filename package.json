@@ -1,0 +1,25 @@
+{
+  "name": "jwt-then",
+  "version": "1.0.0",
+  "description": "Hack'n'slash promisify. This isn't an honest package, and you should treat it with suspicion.",
+  "main": "index.js",
+  "dependencies": {
+    "any-promise": "^1.1.0",
+    "jsonwebtoken": "^5.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fl0w/jwt-then.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fl0w/jwt-then/issues"
+  },
+  "homepage": "https://github.com/fl0w/jwt-then#readme"
+}
