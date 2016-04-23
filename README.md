@@ -1,16 +1,16 @@
 # jwt-then
 
-[![Build status][travis-image]][travis-url]
+[![Build status][travis-image]][travis-url][![License][license-image]][license-url]
 
-jwt as promised
+[jwt](https://github.com/auth0/node-jsonwebtoken) as promised
 
 `$ npm install jwt-then`
 
 ## API
 
-Testing on `node 4+`
+Tested for `node 4+` with two implemented methods only, `verify` and `sign`.
 
-Implements two methods only, `verify` and `sign`.
+Consult [auth0/node-jsonwebtoken#README](https://github.com/auth0/node-jsonwebtoken) for detailed documentation.
 
 ### jwt.sign(payload, key, [options])
 
@@ -46,3 +46,5 @@ console.log(token)
 
 [travis-image]: https://img.shields.io/travis/fl0w/jwt-then.svg?style=flat-square
 [travis-url]: https://travis-ci.org/fl0w/jwt-then
+[license-image]: http://img.shields.io/npm/l/jwt-then.svg?style=flat-square
+[license-url]: LICENSE
