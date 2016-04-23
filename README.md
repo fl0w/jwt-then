@@ -1,6 +1,8 @@
 # jwt-then
 
-Hack'n'slash promisify.
+[![Build status][travis-image]][travis-url]
+
+jwt as promised
 
 `$ npm install jwt-then`
 
@@ -41,3 +43,6 @@ Marty McFly's: ES7 (or using Present MacFly's babel.js)
 const token = await jwt.verify({ username: 'fl0w', 'secret-dev-key'})
 console.log(token)
 ```
+
+[travis-image]: https://img.shields.io/travis/fl0w/jwt-then.svg?style=flat-square
+[travis-url]: https://travis-ci.org/fl0w/jwt-then
