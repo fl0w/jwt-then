@@ -2,9 +2,12 @@
 
 Hack'n'slash promisify.
 
+`$ npm install jwt-then`
+
 ## API
 
 Testing on `node 4+`
+
 Implements two methods only, `verify` and `sign`.
 
 ### jwt.sign(payload, key, [options])
@@ -29,7 +32,7 @@ Verify a token, with options defaulting to `{ algorithm: 'HS256' }`.
 
 ```js
 jwt.verify(token, 'secret-dev-key')
-  .then(function (token) { console.log(token) })
+  .then(token => console.log(token))
 ```
 
 Marty McFly's: ES7 (or using Present MacFly's babel.js)
