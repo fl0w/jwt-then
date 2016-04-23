@@ -6,7 +6,7 @@ const jwt = require('..')
 describe('jwt', function () {
   describe('.sign', function () {
     it ('(payload, key)', function () {
-      return jwt.sign({ id: 123456 }, 'dev-secret').then(function (token) {
+      return jwt.sign({ id: 123456 }, 'dev-secret').then(token => {
         assert(typeof token === 'string')
       })
     })
@@ -20,7 +20,7 @@ describe('jwt', function () {
     ].join('')
 
     it ('(token, key) successfully', function () {
-      return jwt.verify(token, 'dev-secret').then(function (token) {
+      return jwt.verify(token, 'dev-secret').then(token => {
         assert(token)
         assert(token.id === 123456)
       })
@@ -28,7 +28,7 @@ describe('jwt', function () {
 
     it ('(token, key) w/ wrong secret', function () {
       return jwt.verify(token, 'wrong-secret')
-        .catch(function (err) {
+        .catch(err => {
           assert(err.name === 'JsonWebTokenError')
         })
     })
