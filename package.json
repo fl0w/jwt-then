@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "any-promise": "^1.1.0",
-    "jsonwebtoken": "^5.7.0"
+    "jsonwebtoken": "^6.2.0"
   },
   "devDependencies": {
     "mocha": "^2.4.5"

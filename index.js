@@ -9,8 +9,8 @@ exports.sign = function sign(payload, key, opts) {
   opts = opts || {}
 
   return new Promise((resolve, reject) => {
-    jwt.sign(payload, key, opts, (token) => {
-      if (!token) return reject()
+    jwt.sign(payload, key, opts, (err, token) => {
+      if (err || !token) return reject(err)
       resolve(token)
     })
   })
