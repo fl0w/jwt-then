@@ -15,13 +15,12 @@ describe('jwt', function () {
   describe('.verify', function () {
     const token = [
       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9',
-      '.eyJpZCI6MTIzNDU2LCJpYXQiOjE0NjE0MDYzOTV9',
-      '.QZge-iFTDWEuOoGtdhwg6e7UzCzuAn831BiAVEzaOU4'
-    ].join('')
+      'eyJpZCI6MTIzNDU2LCJpYXQiOjE0NjE0MDYzOTV9',
+      'QZge-iFTDWEuOoGtdhwg6e7UzCzuAn831BiAVEzaOU4'
+    ].join('.')
 
     it ('(token, key) successfully', function () {
       return jwt.verify(token, 'dev-secret').then(token => {
-        assert(token)
         assert(token.id === 123456)
       })
     })

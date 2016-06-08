@@ -44,6 +44,11 @@ const token = await jwt.verify({ username: 'fl0w', 'secret-dev-key'})
 console.log(token)
 ```
 
+## Changelog
+
+#### 0.4.0
+ * Bumped dependency to jsonwebtoken@7 **(major)**
+
 [travis-image]: https://img.shields.io/travis/fl0w/jwt-then.svg?style=flat-square
 [travis-url]: https://travis-ci.org/fl0w/jwt-then
 [license-image]: http://img.shields.io/npm/l/jwt-then.svg?style=flat-square
