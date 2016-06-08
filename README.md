@@ -18,13 +18,13 @@ Sign a token with key, with options defaulting to `{ algorithm: 'HS256' }`.
 
 ```js
 jwt.sign({ username: 'fl0w' }, 'secret-dev-key')
-  .then(token => console.log(token))
+  .then(console.log)
 ```
 
 Marty McFly's: ES7 (or using Present MacFly's babel.js)
 
 ```js
-const token = await jwt.sign({ username: 'fl0w', 'secret-dev-key'})
+const token = await jwt.sign({ username: 'fl0w' }, 'secret-dev-key')
 console.log(token)
 ```
 
@@ -34,17 +34,22 @@ Verify a token, with options defaulting to `{ algorithm: 'HS256' }`.
 
 ```js
 jwt.verify(token, 'secret-dev-key')
-  .then(token => console.log(token))
+  .then(console.log)
 ```
 
 Marty McFly's: ES7 (or using Present MacFly's babel.js)
 
 ```js
-const token = await jwt.verify({ username: 'fl0w', 'secret-dev-key'})
+const token = await jwt.verify({ username: 'fl0w' }, 'secret-dev-key')
 console.log(token)
 ```
 
 ## Changelog
+
+#### 0.4.1
+ * Added .editorconfig, because vim goes haywire without it
+ * Added standard linter
+ * Fixed some weirdness in README
 
 #### 0.4.0
  * Bumped dependency to jsonwebtoken@7 **(major)**
