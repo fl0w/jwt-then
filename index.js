@@ -18,7 +18,7 @@ exports.sign = function sign (payload, key, opts) {
 exports.verify = function verify (token, key, opts) {
   opts = opts || {}
   return new Promise((resolve, reject) => {
-    jwt.verify(token, key, (err, decoded) => {
+    jwt.verify(token, key, opts, (err, decoded) => {
       if (err) return reject(err)
       resolve(decoded)
     })
