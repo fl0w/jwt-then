@@ -46,6 +46,10 @@ console.log(token)
 
 ## Changelog
 
+#### 0.5.1 (2016-07-06)
+ * Passing opts to jsonwebtoken
+ * Travis testing fixes
+
 #### 0.4.1
  * Added .editorconfig, because vim goes haywire without it
  * Added standard linter
