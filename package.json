@@ -1,6 +1,6 @@
 {
   "name": "jwt-then",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "jwt as promised",
   "main": "index.js",
   "dependencies": {
