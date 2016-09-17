@@ -5,11 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "any-promise": "^1.1.0",
-    "jsonwebtoken": "^7.0.0"
+    "jsonwebtoken": "^7.1.9"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "standard": "^7.1.2"
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0"
   },
   "scripts": {
     "test": "standard && mocha --reporter spec"
