@@ -16,12 +16,13 @@ Consult [auth0/node-jsonwebtoken#README](https://github.com/auth0/node-jsonwebto
 
 Sign a token with key, with options defaulting to `{ algorithm: 'HS256' }`.
 
+ES6:
+
 ```js
-jwt.sign({ username: 'fl0w' }, 'secret-dev-key')
-  .then(console.log)
+jwt.sign({ username: 'fl0w' }, 'secret-dev-key').then(console.log)
 ```
 
-Marty McFly's: ES7 (or using Present MacFly's babel.js)
+ES7:
 
 ```js
 const token = await jwt.sign({ username: 'fl0w' }, 'secret-dev-key')
@@ -32,12 +33,14 @@ console.log(token)
 
 Verify a token, with options defaulting to `{ algorithm: 'HS256' }`.
 
+ES6:
+
 ```js
 jwt.verify(token, 'secret-dev-key')
   .then(console.log)
 ```
 
-Marty McFly's: ES7 (or using Present MacFly's babel.js)
+ES7:
 
 ```js
 const token = await jwt.verify({ username: 'fl0w' }, 'secret-dev-key')
@@ -45,6 +48,9 @@ console.log(token)
 ```
 
 ## Changelog
+
+#### 0.6.0 (2016-11-22)
+ * Removed dependency `any-promise`
 
 #### 0.5.1 (2016-07-06)
  * Passing opts to jsonwebtoken

@@ -1,10 +1,9 @@
 {
   "name": "jwt-then",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "jwt as promised",
   "main": "index.js",
   "dependencies": {
-    "any-promise": "^1.1.0",
     "jsonwebtoken": "^7.1.9"
   },
   "devDependencies": {
