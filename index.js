@@ -1,11 +1,9 @@
 'use strict'
-
-const Promise = require('any-promise')
 const jwt = require('jsonwebtoken')
 
 exports._jwt = jwt
 
-exports.sign = function sign (payload, key, opts) {
+exports.sign = (payload, key, opts) => {
   opts = opts || {}
   return new Promise((resolve, reject) => {
     jwt.sign(payload, key, opts, (err, token) => {
@@ -15,12 +13,12 @@ exports.sign = function sign (payload, key, opts) {
   })
 }
 
-exports.verify = function verify (token, key, opts) {
+exports.verify = (token, key, opts) => {
   opts = opts || {}
   return new Promise((resolve, reject) => {
-    jwt.verify(token, key, opts, (err, decoded) => {
+    jwt.verify(token, key, opts, (err, verified) => {
       if (err) return reject(err)
-      resolve(decoded)
+      resolve(verified)
     })
   })
 }
