@@ -49,8 +49,10 @@ console.log(token)
 
 ## Changelog
 
-### 1.0.0 (2018-06-26)
+### 1.0.1 (2018-06-26)
+ * Bump release
 
+### 1.0.0 (2018-06-26)
  * Upgrade dependency jsonwebtoken min to 8.3
  * Upgrade devDependencies mocha and standard
 

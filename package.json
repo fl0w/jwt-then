@@ -1,6 +1,6 @@
 {
   "name": "jwt-then",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jwt as promised",
   "main": "index.js",
   "dependencies": {
@@ -22,7 +22,7 @@
     "then",
     "promise"
   ],
-  "author": "Martin Iwanowski <me@fl0w.io>",
+  "author": "Martin fl0w Iwanowski <martin@iwanowski.se>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fl0w/jwt-then/issues"
