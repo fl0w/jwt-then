@@ -49,6 +49,11 @@ console.log(token)
 
 ## Changelog
 
+### 1.0.0 (2018-06-26)
+
+ * Upgrade dependency jsonwebtoken min to 8.3
+ * Upgrade devDependencies mocha and standard
+
 #### 0.6.0 (2016-11-22)
  * Removed dependency `any-promise`
 

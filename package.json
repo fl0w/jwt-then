@@ -1,14 +1,14 @@
 {
   "name": "jwt-then",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "jwt as promised",
   "main": "index.js",
   "dependencies": {
-    "jsonwebtoken": "^8.0.0"
+    "jsonwebtoken": "^8.3.0"
   },
   "devDependencies": {
-    "mocha": "^4.0.0",
-    "standard": "^10.0.2"
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
   },
   "scripts": {
     "test": "standard && mocha --reporter spec"
