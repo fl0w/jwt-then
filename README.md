@@ -43,8 +43,8 @@ jwt.verify(token, 'secret-dev-key')
 ES7:
 
 ```js
-const token = await jwt.verify({ username: 'fl0w' }, 'secret-dev-key')
-console.log(token)
+const result = await jwt.verify(token, 'secret-dev-key')
+console.log(result)
 ```
 
 ## Changelog
