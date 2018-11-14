@@ -4,7 +4,7 @@
   "description": "jwt as promised",
   "main": "index.js",
   "dependencies": {
-    "jsonwebtoken": "^8.3.0"
+    "jsonwebtoken": "^8.4.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
