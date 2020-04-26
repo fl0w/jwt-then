@@ -7,7 +7,7 @@
     "jsonwebtoken": "^8.3.0"
   },
   "devDependencies": {
-    "mocha": "^6.1.1",
+    "mocha": "^7.1.2",
     "standard": "^14.3.1"
   },
   "scripts": {
